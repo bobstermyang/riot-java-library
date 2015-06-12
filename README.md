@@ -9,7 +9,8 @@ Requires the following libraries:
 
 ## Setup
 
-Add it as an external library to your project.
+You can either compile the library yourself or you can download the compiled .jar file @ https://drive.google.com/file/d/0BxgiDCyluJNvS1ZQcnh2eTlhdUE/view?usp=sharing.
+Then add it as an external library to your project. Easy peasy.
 
 
 ## Usage
@@ -29,8 +30,8 @@ public class Example {
 		
 		RiotApi api = new RiotApi("YOUR-API-KEY-HERE");
 
-		Map<String, Summoner> summoners = api.getSummonersByName(Region.NA, "rithms, tryndamere");
-		Summoner summoner = summoners.get("rithms");
+		Map<String, Summoner> summoners = api.getSummonersByName(Region.NA, ", ");
+		Summoner summoner = summoners.get("");
 		long id = summoner.getId();
 		System.out.println(id);
 	}
